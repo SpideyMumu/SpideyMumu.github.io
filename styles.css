@@ -1,3 +1,48 @@
+body, html {
+    height: 100%;
+    background: #121212;
+}
+
+a {
+    text-decoration: none;
+}
+
+.mainBody {
+    display: flex;
+    padding: 2.5%;
+}
+
 .spideyMumu {
     color: #25AEF4;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+.introText {
+    width: 70%;
+}
+
+.mySmallCard {
+    /* height: */
+    margin-top: 10%;
+}
+
+.mySmallCardPic {
+    height: auto;
+}
+
+.myButtons {
+    border-radius: 30px;
+}
+
+.myHeader, #home {
+    margin-top: 4rem;
+    padding-top: 4rem;
+}
+
+.myPic {
+    width: 300px; /* Set the desired width and height for the circular image */
+    height: 300px;
+    border-radius: 50%; /* Use a border-radius of 50% to create a circular shape */
+    object-fit: cover; /* Ensure the image fills the circular shape without distortion */
+    object-position: center center; /* Center the image within the circular shape */
 }
