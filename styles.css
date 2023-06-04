@@ -7,6 +7,10 @@ a {
     text-decoration: none;
 }
 
+h2 {
+    white-space: nowrap;
+}
+
 .mainBody {
     display: flex;
     padding: 2.5%;
@@ -22,12 +26,7 @@ a {
 }
 
 .mySmallCard {
-    /* height: */
     margin-top: 10%;
-}
-
-.mySmallCardPic {
-    height: auto;
 }
 
 .myButtons {
