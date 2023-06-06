@@ -16,6 +16,10 @@ h2 {
     border-radius: 12px;
 }
 
+.myNavbarDropdown {
+    border-radius: 12px;
+}
+
 .mainBody {
     display: flex;
     padding: 2.5%;
