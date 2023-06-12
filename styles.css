@@ -69,9 +69,16 @@ h2 {
     object-position: center center;
 }
 
+.myJobPicContainer {
+    display: flex;
+    align-items: center;
+}
+
 .myJobPic {
     border-top-left-radius: 12px;
     border-bottom-left-radius: 12px;
+    align-self: center;
+    
 }
 
 @media (max-width: 768px) {
