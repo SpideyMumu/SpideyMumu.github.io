@@ -78,8 +78,7 @@ h2 {
     margin-bottom: 5%;
 }
 
-.myBigCard,
-.mySmallCard {
+body {
     animation: fadeInAnimation ease 1.5s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
