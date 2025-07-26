@@ -137,6 +137,11 @@ body {
   }
 }
 
+#gudfood-logo {
+  background-color: white;
+  padding: 10px;
+}
+
 .filter-container {
   display: flex;
   flex-wrap: wrap;
@@ -203,4 +208,21 @@ body {
 
 .fade-in {
   animation: fadeIn 0.5s ease forwards;
+}
+
+.project-links {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.project-link {
+  color: #d8d8d8;
+  text-decoration: none;
+  font-size: x-large;
+  transition: color 0.3s ease;
+}
+
+.project-link:hover {
+  color: #4682b4;
 }
