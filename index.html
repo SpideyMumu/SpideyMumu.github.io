@@ -9,6 +9,7 @@
     integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" />
   <link rel="stylesheet" type="text/css" href="styles.css" />
   <script src="https://kit.fontawesome.com/560df44721.js" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
 </head>
 
 <body>
@@ -140,7 +141,7 @@
               Hello there! I am Muhammad Mursyid, an aspiring software
               developer with experience in frontend frameworks such as React
               and UI design toolkits such as Figma. Check out my resume
-              <a href="https://1drv.ms/b/s!AuJ5nBYUW_A-hep8aNFbOiqgVmPoVw?e=RaNiPG">here</a>.
+              <a href="https://1drv.ms/b/c/3ef05b14169c79e2/EUM8lJdeHS1FpI9KzZ5j-1oBTjwCoP2lBj-jRnB1gzSxTw?e=cB5q0m">here</a>.
             </p>
             <p>
               I have been a technology enthusiast for as long as I can
@@ -169,16 +170,42 @@
       <div id="experience">
         <h1 class="myHeader text-white">Experience</h1>
 
-        <div>
-          <div class="myBigCard card bg-dark text-white">
+        <!-- HCLTech -->
+         <div class="myBigCard card bg-dark text-white">
             <div class="row g-0">
               <div class="myJobPicContainer col-md-4">
-                <img src="images/10_10_media.jpg" alt="Image" class="myJobPic img-fluid">
+                <img src="images\hcltech_image.png" alt="Image" class="myJobPic img-fluid">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h3 class="card-title">Software Engineer</h3>
+                  <p class="card-text"><i style="font-size: large;">June 2025 - Present</i>
+                  <!-- <ul>
+                    <li>Designed and developed a cross-platform mobile app using React Native for resort booking and 
+                      professional service offerings, enhancing user experience and streamlining resort programs.
+                      </li>
+                    <li>Utilized React Native's reusable components to build a responsive and intuitive user interface, 
+                      ensuring seamless performance across iOS and Android devices.
+                      </li>
+                    <li>Conducted thorough testing and debugging across multiple devices and platforms, ensuring a 
+                      stable and reliable app experience for end-users.</li>
+                  </ul> -->
+                  </p>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <!-- 10:10 Media -->
+        <div class="myBigCard card bg-dark text-white">
+            <div class="row g-0">
+              <div class="myJobPicContainer col-md-4">
+                <img src="images/10_10_media_high_res.webp" alt="Image" class="myJobPic img-fluid">
               </div>
               <div class="col-md-8">
                 <div class="card-body">
                   <h3 class="card-title">Frontend Developer</h3>
-                  <p class="card-text"><i style="font-size: large;">April 2024 - Present</i>
+                  <p class="card-text"><i style="font-size: large;">April 2024 - August 2024</i>
                   <ul>
                     <li>Designed and developed a cross-platform mobile app using React Native for resort booking and 
                       professional service offerings, enhancing user experience and streamlining resort programs.
@@ -193,11 +220,10 @@
                 </div>
               </div>
             </div>
-          </div>
         </div>
-        
-        <div>
-          <div class="myBigCard card bg-dark text-white">
+
+        <!-- AMD -->
+        <div class="myBigCard card bg-dark text-white">
             <div class="row g-0">
               <div class="myJobPicContainer col-md-4">
                 <img src="images/amd-logo.png" alt="Image" class="myJobPic img-fluid">
@@ -220,19 +246,26 @@
                 </div>
               </div>
             </div>
-          </div>
-
         </div>
+
+
       </div>
 
       <!-- Projects -->
       <div id="projects">
         <h1 class="myHeader text-white">Projects</h1>
 
+        <div class="filter-container">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="software">Software Development</button>
+          <button class="filter-btn" data-filter="data">Data Engineering</button>
+          <button class="filter-btn" data-filter="design">UI/UX Design</button>
+        </div>
+
         <div class="card-container">
           <div class="row">
             <div class="col-md-4 col-sm-6 d-flex">
-              <div class="mySmallCard card bg-dark text-white">
+              <div class="mySmallCard card bg-dark text-white" data-tags="software">
                 <img src="images/gojim-poster.png" class="card-img-top" alt="Image 1">
                 <div class="card-body">
                   <h3 class="card-title">GoJim</h3>
@@ -245,11 +278,14 @@
                     <li>Deployed on Expo Go</li>
                   </ul>
                   </p>
+                  <div class="project-tags">
+                    <span class="tag software">Software Development</span>
+                  </div>
                 </div>
               </div>
             </div>
             <div class="col-md-4 col-sm-6 d-flex">
-              <div class="mySmallCard card bg-dark text-white">
+              <div class="mySmallCard card bg-dark text-white" data-tags="software">
                 <img src="images/nuschange.jfif" class="card-img-top" alt="Image 2">
                 <div class="card-body">
                   <h3 class="card-title">NUSChange</h3>
@@ -261,11 +297,14 @@
                     <li>Deployed on Amazon Web Service Elastic BeanStalk</li>
                   </ul>
                   </p>
+                  <div class="project-tags">
+                    <span class="tag software">Software Development</span>
+                  </div>
                 </div>
               </div>
             </div>
             <div class="col-md-4 col-sm-6 d-flex">
-              <div class="mySmallCard card bg-dark text-white">
+              <div class="mySmallCard card bg-dark text-white" data-tags="design">
                 <img src="images/AF logo.jfif" class="card-img-top" alt="Image 3">
                 <div class="card-body">
                   <h3 class="card-title">Anytime Fitness</h3>
@@ -278,13 +317,16 @@
                     <li>Carried out user evaluation for further improvements</li>
                   </ul>
                   </p>
+                  <div class="project-tags">
+                    <span class="tag ui">UI Design</span>
+                  </div>
                 </div>
               </div>
             </div>
 
 
             <div class="col-md-4 col-sm-6 d-flex">
-              <div class="mySmallCard card bg-dark text-white">
+              <div class="mySmallCard card bg-dark text-white" data-tags="software">
                 <img src="images/jakarta-ee-logo.png" class="card-img-top" style="background-color: #25AEF4;"alt="Image 4">
                 <div class="card-body">
                   <h3 class="card-title">CarMS</h3>
@@ -296,13 +338,16 @@
                     <li>Enterprise system consists of Reservation platform and Staff Management</li>
                   </ul>
                   </p>
+                  <div class="project-tags">
+                    <span class="tag software">Software Development</span>
+                  </div>
                 </div>
               </div>
             </div>
             
             
             <div class="col-md-4 col-sm-6 d-flex">
-              <div class="mySmallCard card bg-dark text-white">
+              <div class="mySmallCard card bg-dark text-white" data-tags="data">
                 <img src="images/yelp-review.png" class="card-img-top" alt="Image 5">
                 <div class="card-body">
                   <h3 class="card-title">Yelp Reviews Analysis</h3>
@@ -314,11 +359,14 @@
                       <li>Visualised relevant data with Tableau in the form of Histograms, Density Map etc.</li>
                     </ul>
                   </p>
+                  <div class="project-tags">
+                    <span class="tag data">Data Engineering</span>
+                  </div>
                 </div>
               </div>
             </div>
             <div class="col-md-4 col-sm-6 d-flex">
-              <div class="mySmallCard card bg-dark text-white">
+              <div class="mySmallCard card bg-dark text-white" data-tags="design">
                 <img src="images/RentForMe-logo2.png" class="card-img-top" alt="Image 6">
                 <div class="card-body">
                   <h3 class="card-title">Rent For Me</h3>
@@ -330,6 +378,9 @@
                     <li>Designed whole enterprise system with Unified Modelling Language</li>
                   </ul>
                   </p>
+                  <div class="project-tags">
+                    <span class="tag ui">UI Design</span>
+                  </div>
                 </div>
               </div>
             </div>
@@ -375,8 +426,7 @@
             </div>
         
             <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-              <li class="ms-3"><a class="text-white" href="https://facebook.com"><i class="fa-brands fa-telegram"></i></a></li>
-              <li class="ms-3"><a class="text-white" href="https://linkedin.com"><i class="fa-brands fa-linkedin"></i></a></li>
+              <li class="ms-3"><a class="text-white" href="https://www.linkedin.com/in/muhdmursyid8/"><i class="fa-brands fa-linkedin"></i></a></li>
             </ul>
           </footer>
         
